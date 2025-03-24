@@ -1,4 +1,4 @@
-pam Detection using Machine Learning Produced by: Kirubel Temesgen College ID: C00260396 Date: 28/02/2025
+spam Detection using Machine Learning Produced by: Kirubel Temesgen College ID: C00260396 Date: 28/02/2025
 
 Overview This project focuses on building and evaluating a spam classification model using machine learning techniques. Three models—Naïve Bayes, Support Vector Machines (SVM), and K-Nearest Neighbours (KNN)—are implemented and compared to determine the best performer in detecting spam emails.
 
