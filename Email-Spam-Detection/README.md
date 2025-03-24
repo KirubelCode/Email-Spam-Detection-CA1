@@ -19,12 +19,12 @@ Spam Labeling: Spam manually identified based on keywords and sender domain.
 
 Preprocessing: Removed missing values and irrelevant columns. Applied TF-IDF vectorisation for text transformation. Used n-grams to improve spam pattern recognition.
 
-Model Evaluation
+Model Evaluation For:
 
-Naïve Bayes Classifier Accuracy: 83.91% Strengths: Fast, scalable, effective for text classification. Weaknesses: Struggles with complex relationships between words.
-
-Support Vector Machine (SVM) Accuracy: 89.77% Strengths: Effective for high-dimensional data, finds optimal separation between classes. Weaknesses: Computationally expensive, slower training time.
-
-k-Nearest Neighbours (k-NN) Accuracy: 82.04% Strengths: Simple, non-parametric, useful for non-linear classification. Weaknesses: Slow for large datasets, struggles with spam detection accuracy.
+Naïve Bayes Classifier
+Support Vector Machine(SVM)
+K-Nearest Neighbour (KNN)
+Neural Networks(MLP)
+Kmeans-Clustering
 
 Future Enhancements Improve feature engineering – Explore deep learning techniques like transformers. Reduce false positives – Optimise model hyperparameters to improve spam classification. Hybrid Model Approach – Combine multiple models for better accuracy.
