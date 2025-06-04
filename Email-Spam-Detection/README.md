@@ -1,30 +1,56 @@
-spam Detection using Machine Learning Produced by: Kirubel Temesgen College ID: C00260396 Date: 28/02/2025
+Email Spam Detection (Machine Learning Project)
+Project Overview
+This project aims to build a machine learning-based email spam detection system. I individually developed the entire project, utilising a variety of machine learning algorithms including Naïve Bayes, Support Vector Machine (SVM), and K-Nearest Neighbors (KNN), Kmeans clustering and Neural Networks to classify emails as spam or ham (non-spam). The project leverages the Enron Email Dataset, processing over 500,000 emails and applying Natural Language Processing (NLP) techniques for text feature extraction. The models were evaluated on multiple metrics to find the most accurate solution.
 
-Overview This project focuses on building and evaluating a spam classification model using machine learning techniques. Three models—Naïve Bayes, Support Vector Machines (SVM), and K-Nearest Neighbours (KNN)—are implemented and compared to determine the best performer in detecting spam emails.
+-----
 
-The Enron Email Dataset, containing over 500,000 real-world emails, is used for training and testing. The CRISP-DM (Cross-Industry Standard Process for Data Mining) methodology structures the workflow, ensuring effective data preparation, feature engineering, and model evaluation.
+Tools & Technologies
+- Python 3
 
-Features Dataset Preprocessing – Cleaning and transforming raw email data. Feature Engineering – TF-IDF vectorisation, stopword removal, and n-gram analysis. Spam Detection Models – Implementing and evaluating Naïve Bayes, SVM, and KNN. Performance Metrics – Accuracy, precision, recall, F1-score, and confusion matrix analysis. Optimisation – Exploring different preprocessing techniques to improve classification. Installation
+- Libraries: Pandas, NumPy, scikit-learn, NLTK, Matplotlib, Seaborn
 
-Clone the Repository Run the following command in your terminal:
-git clone https://github.com/KirubelCode/Email-Spam-Detection-CA1 cd Email-Spam-Detection-CA1
+- Techniques: TF-IDF Vectorization, Machine Learning (Naïve Bayes, SVM, KNN), Hyperparameter Tuning
 
-Install Dependencies Ensure Python 3.x is installed, then install the required libraries:
+- Dataset: Enron Email Dataset (from Kaggle)
 
-Run the Application python app.py
 
-Dataset Information Source: The Enron Email Dataset. Size: 500,000+ emails from Enron employees. Link: https://www.kaggle.com/datasets/wcukierski/enron-email-dataset
+------
 
-Spam Labeling: Spam manually identified based on keywords and sender domain.
+Approach
+I followed the CRISP-DM methodology to structure the project. Key steps included:
 
-Preprocessing: Removed missing values and irrelevant columns. Applied TF-IDF vectorisation for text transformation. Used n-grams to improve spam pattern recognition.
+- Data Cleaning: Removed metadata, irrelevant content, and applied stopword removal to focus on email body text.
 
-Model Evaluation For:
+- Feature Engineering: Used TF-IDF to convert email text into numerical features.
 
-Naïve Bayes Classifier
-Support Vector Machine(SVM)
-K-Nearest Neighbour (KNN)
-Neural Networks(MLP)
-Kmeans-Clustering
+- Model Selection: Implemented and tuned models like Naïve Bayes, SVM, and KNN to predict spam emails based on text features.
 
-Future Enhancements Improve feature engineering – Explore deep learning techniques like transformers. Reduce false positives – Optimise model hyperparameters to improve spam classification. Hybrid Model Approach – Combine multiple models for better accuracy.
+- Evaluation: Used accuracy, precision, recall, and F1-score to assess model performance. SVM performed best, achieving 98% accuracy.
+
+----
+
+
+Challenges & Solutions
+- Dataset Imbalance: Handled this by using stratified splitting and emphasing recall to ensure spam emails were not missed.
+
+- Noisy Data: Cleaned the raw email data by removing signatures, headers, and non-relevant text.
+
+- Model Performance: After experimenting with several models, the SVM model emerged as the top performer, balancing both speed and accuracy.
+
+
+-----
+
+Results
+The SVM model achieved an impressive 98% accuracy and showed excellent precision and recall, making it highly effective at detecting spam while minimising false positives. The Naïve Bayes model also performed well, serving as a fast baseline.
+
+
+----
+
+How to Run the Project
+Clone the repository:
+- git clone https://github.com/KirubelCode/Email-Spam-Detection-CA1.git
+- cd Email-Spam-Detection-CA1
+
+- Run the Jupyter notebook to execute the projects Individually:
+python x.ipynb
+
