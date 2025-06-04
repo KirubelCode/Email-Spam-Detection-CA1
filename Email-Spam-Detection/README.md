@@ -31,11 +31,11 @@ I followed the CRISP-DM methodology to structure the project. Key steps included
 
 
 Challenges & Solutions
-- Dataset Imbalance: Handled this by using stratified splitting and emphasing recall to ensure spam emails were not missed.
+- Dataset Imbalance: Handled this by using splitting and emphasing recall to ensure spam emails were not missed.
 
-- Noisy Data: Cleaned the raw email data by removing signatures, headers, and non-relevant text.
+- Noisy Data: Cleaned the raw email data by removing signatures, headers, and non-relevant metadata.
 
-- Model Performance: After experimenting with several models, the SVM model emerged as the top performer, balancing both speed and accuracy.
+- Model Performance: After experimenting with several models, the SVM model emerged as one of the top performers, balancing both speed and accuracy.
 
 
 -----
